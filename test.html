@@ -21,9 +21,10 @@
     path.style="cursor:pointer;fill:#BBB";
 
     function getLightValue() {
-      var t = Puck.magTemp();
-      console.log(t)
-        
+     // Puck.eval("Puck.light()", function(v) {
+     //   path.style.fill="rgb("+Math.round(v*255)+",0,0)";
+     var t = Puck.magTemp()
+     console.log(t)
         setTimeout(function() {
           getLightValue();
         }, 250);
