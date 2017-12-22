@@ -21,7 +21,8 @@
     path.style="cursor:pointer;fill:#BBB";
 
     function getLightValue() {
-      console.log(Puck.magTemp())
+      var t = Puck.magTemp();
+      console.log(t)
         
         setTimeout(function() {
           getLightValue();
