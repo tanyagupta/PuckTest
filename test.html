@@ -23,6 +23,7 @@
     function getLightValue() {
       Puck.eval("Puck.light()", function(v) {
         path.style.fill="rgb("+Math.round(v*255)+",0,0)";
+        console.log(E.getTemperature()) 
         setTimeout(function() {
           getLightValue();
         }, 250);
@@ -31,7 +32,7 @@
 
     // When clicked, start trying to get the light value
     path.addEventListener("click", function() {
-     console.log(E.getTemperature()) 
+    
      getLightValue();
     });
   </script>
