@@ -22,14 +22,7 @@
     path.style="cursor:pointer;fill:#BBB";
 
     function getLightValue() {
-      Puck.eval("Puck.magTemp()", function(v) {
-     //   path.style.fill="rgb("+Math.round(v*255)+",0,0)";
-    
-     console.log(v)
-        setTimeout(function() {
-          getLightValue();
-        }, 250);
-      });
+      console.log(Puck.magTemp())
     }
 
     // When clicked, start trying to get the light value
